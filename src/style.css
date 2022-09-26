@@ -1,0 +1,135 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+}
+
+.escolherbotao{
+    background-color: rgb(66, 146, 66);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.letrascontainer{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    width: 835px;
+}
+
+.letra{
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  background-color: rgb(146, 146, 173);
+  color: rgb(80, 75, 75);
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid gray;
+}
+
+.clicada{
+    background-color: white;
+    color: blue;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+input{
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 65%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+}
+
+label{
+    width: 70%;
+    display: flex;
+    gap: 15px;
+}
+
+label span{
+    width: fit-content;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+
+.done{
+    width: fit-content;
+    padding: 18px;
+    text-align: center;
+    background-color: rgb(230, 218, 218);
+    color: rgb(30, 30, 187);
+    font-weight: bold;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.forcawrapper{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.forcawrapper div{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 50%;
+    height: 500px;
+}
+
+.escolherepalavra{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    align-items: flex-end;
+}
+
+.escolhas{
+    display: flex;
+    gap: 10px;
+}
+
+.venceu{
+    color: green;
+}
+
+.perdeu{
+    color: red;
+}
