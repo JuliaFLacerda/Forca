@@ -1,10 +1,15 @@
+import Jogo from "./Jogo";
+
+export default function App(){
+
 const [counter, setCounter] = useState(0);
 const [acertadas, setAcertadas] = useState([]);
 const [lose, setLose] = useState("naocomeçou");
 const [clicadas, setClicadas] = useState([]);
 
     function selecionarletra(e){
-        let verify = 0;
+        let verify = counter;
+        let newacertadas = [...acertadas];
         if(!clicadas.includes(e.target.textContent)){
             setClicadas([...clicadas, e.target.textContent])
             console.log(clicadas);
@@ -21,20 +26,29 @@ const [clicadas, setClicadas] = useState([]);
            }
        }
        else{
-        if(!acertadas.includes(e.target.textContent) && verify == 0){
+        if(!acertadas.includes(e.target.textContent) && verify == counter){
             setAcertadas([...acertadas, e.target.textContent]);
+            newacertadas = [...acertadas, e.target.textContent];
         }
        };
-    }
 
-    useEffect(() => {
-        let win = [];
-        for(const i of palavra){
-            if(acertadas.includes(i) && counter <6){
-                 win.push(i);
-            }
+       let win = [];
+       for(const i of palavra){
+        if(newacertadas.includes(i) && verify <6){
+             win.push(i);
         }
         if(win.length === palavra.length && lose !=="naocomeçou"){
             setLose("venceu");
         }
-    }, [acertadas])
+    }
+    }
+
+return(
+    <>
+    <Jogo palavra={palavra} counter={counter} setAcertadas ={setAcertadas} setLose={setLose} setCounter={setCounter} setClicadas={setClicadas} lose={lose}/>
+    <Letras funçao={selecionarletra} clicadas={clicadas} lose={lose}/>
+    <Chute palavra={palavra} lose={lose} setLose={setLose} setAcertadas={setAcertadas} acertadas={acertadas} setCounter={setCounter}/>
+    </>
+)
+
+}

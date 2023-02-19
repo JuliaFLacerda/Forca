@@ -21,26 +21,6 @@ const Jogo = () => {
     }
 
 
-    useEffect(() => {
-        if(counter === 6){
-            setAcertadas([...palavra]);
-            setLose("perdeu");
-           }
-        }
-    , [counter])
-
-    useEffect(() => {
-        let win = [];
-        for(const i of palavra){
-            if(acertadas.includes(i) && counter <6){
-                 win.push(i);
-            }
-        }
-        if(win.length === palavra.length && lose !=="naocomeçou"){
-            setLose("venceu");
-        }
-    }, [acertadas])
-
     function escolher(e){
         let a = [...palavras];
       a = a.sort(comparador);
