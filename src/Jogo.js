@@ -13,31 +13,13 @@ import forca6 from './assets/forca6.png';
 
 const Jogo = () => {
     let forcas = [forca0, forca1, forca2, forca3, forca4, forca5, forca6]
-    const [counter, setCounter] = useState(0);
+    
     const [palavra, setPalavra] = useState([]);
-    const [acertadas, setAcertadas] = useState([]);
-    const [lose, setLose] = useState("naocomeçou");
-    const [clicadas, setClicadas] = useState([]);
 
     function comparador() { 
         return Math.random() - 0.5; 
     }
 
-    function selecionarletra(e){
-        if(!clicadas.includes(e.target.textContent)){
-            setClicadas([...clicadas, e.target.textContent])
-            console.log(clicadas);
-        }
-        //for in if value 
-        if(!palavra.includes(e.target.textContent)){
-           setCounter(counter + 1);
-       }
-       else{
-        if(!acertadas.includes(e.target.textContent)){
-            setAcertadas([...acertadas, e.target.textContent]);
-        }
-       };
-    }
 
     useEffect(() => {
         if(counter === 6){
