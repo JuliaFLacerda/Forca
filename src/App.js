@@ -17,7 +17,6 @@ const [palavra, setPalavra] = useState([]);
         let newacertadas = [...acertadas];
         if(!clicadas.includes(e.target.textContent)){
             setClicadas([...clicadas, e.target.textContent])
-            console.log(clicadas);
         }
         //for in if value 
         if(!palavra.includes(e.target.textContent)){
@@ -47,6 +46,7 @@ const [palavra, setPalavra] = useState([]);
         }
 
         console.log(win);
+        
     }
     }
 
