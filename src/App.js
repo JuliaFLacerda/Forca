@@ -44,8 +44,7 @@ const [palavra, setPalavra] = useState([]);
         if(win.length === palavra.length && lose !=="naocomeçou"){
             setLose("venceu");
         }
-
-        console.log(win);
+        console.log("Win: " + win);
         
     }
     }
