@@ -13,7 +13,7 @@ import forca6 from './assets/forca6.png';
 
 const Jogo = (props) => {
     
-    const {counter, lose, setPalavra, setAcertadas, setLose, setCounter, setClicadas} = props;
+    const {counter, palavra, acertadas, lose, setPalavra, setAcertadas, setLose, setCounter, setClicadas} = props;
     const forcas = [forca0, forca1, forca2, forca3, forca4, forca5, forca6]
 
     function comparador() { 
@@ -54,8 +54,6 @@ const Jogo = (props) => {
             </div>
         </div>
     </div>
-           <Letras funçao={selecionarletra} clicadas={clicadas} lose={lose}/>
-           <Chute palavra={palavra} lose={lose} setLose={setLose} setAcertadas={setAcertadas} acertadas={acertadas} setCounter={setCounter}/>
            </>)
 }
 

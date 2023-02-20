@@ -51,7 +51,7 @@ const [palavra, setPalavra] = useState([]);
 
 return(
     <>
-    <Jogo palavra={palavra} setPalavra={setPalavra} counter={counter} setAcertadas ={setAcertadas} setLose={setLose} setCounter={setCounter} setClicadas={setClicadas} lose={lose}/>
+    <Jogo palavra={palavra} acertadas={acertadas} setPalavra={setPalavra} counter={counter} setAcertadas ={setAcertadas} setLose={setLose} setCounter={setCounter} setClicadas={setClicadas} lose={lose}/>
     <Letras funçao={selecionarletra} clicadas={clicadas} lose={lose}/>
     <Chute palavra={palavra} lose={lose} setLose={setLose} setAcertadas={setAcertadas} acertadas={acertadas} setCounter={setCounter}/>
     </>
