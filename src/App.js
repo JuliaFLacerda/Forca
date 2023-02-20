@@ -24,6 +24,7 @@ const [palavra, setPalavra] = useState([]);
            if(verify === 6){
             setAcertadas([...palavra]);
             setLose("perdeu");
+            setCounter(6);
            }
            else{
             setCounter(counter + 1);
