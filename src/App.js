@@ -1,4 +1,8 @@
-import Jogo from "./Jogo";
+import { useEffect, useState } from 'react';
+import Chute from './Chute';
+import Letras from './Letras';
+import Jogo from './Jogo';
+
 
 export default function App(){
 
@@ -6,6 +10,7 @@ const [counter, setCounter] = useState(0);
 const [acertadas, setAcertadas] = useState([]);
 const [lose, setLose] = useState("naocomeçou");
 const [clicadas, setClicadas] = useState([]);
+const [palavra, setPalavra] = useState([]);
 
     function selecionarletra(e){
         let verify = counter;
@@ -45,7 +50,7 @@ const [clicadas, setClicadas] = useState([]);
 
 return(
     <>
-    <Jogo palavra={palavra} counter={counter} setAcertadas ={setAcertadas} setLose={setLose} setCounter={setCounter} setClicadas={setClicadas} lose={lose}/>
+    <Jogo palavra={palavra} setPalavra={setPalavra} counter={counter} setAcertadas ={setAcertadas} setLose={setLose} setCounter={setCounter} setClicadas={setClicadas} lose={lose}/>
     <Letras funçao={selecionarletra} clicadas={clicadas} lose={lose}/>
     <Chute palavra={palavra} lose={lose} setLose={setLose} setAcertadas={setAcertadas} acertadas={acertadas} setCounter={setCounter}/>
     </>

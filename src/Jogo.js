@@ -11,10 +11,10 @@ import forca4 from './assets/forca4.png';
 import forca5 from './assets/forca5.png';
 import forca6 from './assets/forca6.png';
 
-const Jogo = () => {
-    let forcas = [forca0, forca1, forca2, forca3, forca4, forca5, forca6]
+const Jogo = (props) => {
     
-    const [palavra, setPalavra] = useState([]);
+    const {counter, lose, setPalavra, setAcertadas, setLose, setCounter, setClicadas} = props;
+    const forcas = [forca0, forca1, forca2, forca3, forca4, forca5, forca6]
 
     function comparador() { 
         return Math.random() - 0.5; 

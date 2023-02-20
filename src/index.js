@@ -1,9 +1,9 @@
 import { render } from 'react-dom';
-import Jogo from './Jogo';
+import App from './App';
 
 import "./reset.css"
 import "./style.css";
 
 
 
-render(<Jogo />, document.querySelector(".root"))
+render(<App />, document.querySelector(".root"))
