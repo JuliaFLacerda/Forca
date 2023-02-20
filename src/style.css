@@ -53,9 +53,10 @@ form{
 }
 
 input{
-    border: 1px solid gray;
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
-    width: 65%;
+    width: 60%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 12px;
@@ -81,7 +82,7 @@ label span{
     width: fit-content;
     padding: 18px;
     text-align: center;
-    background-color: rgb(230, 218, 218);
+    background-color: #E1ECF4;
     color: rgb(30, 30, 187);
     font-weight: bold;
     border: 1px solid gray;
@@ -93,8 +94,8 @@ label span{
     display: flex;
     gap: 10px;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 50px;
+    padding-top: 10px;
+    margin-bottom: 70px;
 }
 .forcawrapper div{
     font-size: 50px;
