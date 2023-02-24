@@ -22,12 +22,12 @@ body{
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
-    width: 835px;
+    width: 1030px;
 }
 
 .letra{
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   padding: 10px;
   background-color: white;
   color:  #39739D;
@@ -109,12 +109,12 @@ button{
 }
 
 img{
-    width: 25%;
+    width: 35%;
     
 }
 
 .escolherepalavra{
-    width: 75%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
