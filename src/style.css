@@ -65,7 +65,7 @@ input{
 }
 
 label{
-    width: 82%;
+    width: 84%;
     display: flex;
 }
 
@@ -78,7 +78,7 @@ label span{
 
 
 .done{
-    width: 16%;
+    width: 14%;
     padding: 18px;
     text-align: center;
     background-color: #E1ECF4;
