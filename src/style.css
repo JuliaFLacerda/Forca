@@ -44,7 +44,7 @@ body{
 }
 
 form{
-    width: 100%;
+    width: 835px;
     display: flex;
     justify-content: center;
     gap: 2%;
@@ -93,7 +93,7 @@ label span{
 .forcawrapper{
     display: flex;
     gap: 10px;
-    width: 100%;
+    width: 90%;
     padding-top: 10px;
     margin-bottom: 70px;
 }
