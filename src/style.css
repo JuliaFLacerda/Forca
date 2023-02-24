@@ -92,7 +92,7 @@ label span{
 
 .forcawrapper{
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
     width: 90%;
     padding-top: 10px;
     margin-bottom: 70px;
@@ -109,7 +109,7 @@ button{
 }
 
 img{
-    width: 400px;
+    width: 500px;
     
 }
 
@@ -124,7 +124,7 @@ img{
 .escolhas{
     display: flex;
     gap: 10px;
-    font-size: 70px;
+    font-size: 70px !important;
 }
 
 .venceu{
