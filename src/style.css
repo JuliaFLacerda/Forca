@@ -22,12 +22,12 @@ body{
     display: flex;
     flex-flow: row wrap;
     gap: 10px;
-    width: 1030px;
+    width: 835px;
 }
 
 .letra{
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   padding: 10px;
   background-color: white;
   color:  #39739D;
@@ -109,7 +109,7 @@ button{
 }
 
 img{
-    width: 35%;
+    width: 400px;
     
 }
 
@@ -124,7 +124,7 @@ img{
 .escolhas{
     display: flex;
     gap: 10px;
-    font-size: 70px !important;
+    font-size: 50px !important;
 }
 
 .venceu{
