@@ -109,7 +109,7 @@ button{
 }
 
 img{
-    width: 40%;
+    width: 400px;
     
 }
 
@@ -124,6 +124,7 @@ img{
 .escolhas{
     display: flex;
     gap: 10px;
+    font-size: 70px;
 }
 
 .venceu{
