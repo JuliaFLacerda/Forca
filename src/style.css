@@ -118,7 +118,6 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 500px;
     align-items: flex-end;
 }
 
