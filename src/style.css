@@ -47,7 +47,7 @@ form{
     width: 664px;
     display: flex;
     justify-content: center;
-    gap: 2%;
+    gap: 15px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -56,7 +56,7 @@ input{
     border: 1px solid #CCCCCC;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 6px;
-    width: 60%;
+    width: 353px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 12px;
@@ -65,7 +65,7 @@ input{
 }
 
 label{
-    width: 84%;
+   
     display: flex;
     gap: 12px;
 }
@@ -79,7 +79,7 @@ label span{
 
 
 .done{
-    width: 14%;
+    width: 100px;
     padding: 18px;
     text-align: center;
     background-color: #E1ECF4;
