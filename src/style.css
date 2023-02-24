@@ -67,7 +67,6 @@ input{
 label{
     width: 82%;
     display: flex;
-    gap: 15px;
 }
 
 label span{
