@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+https://projeto8-jogoforca-4aiu.vercel.app/
+
+#Descrição
+
+Para iniciar o jogo, clique em Escolher Palavra. 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
