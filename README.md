@@ -1,6 +1,6 @@
 https://projeto8-jogoforca-4aiu.vercel.app/
 
-#Descrição
+## Descrição
 
 Para iniciar o jogo, clique em Escolher Palavra. 
 
